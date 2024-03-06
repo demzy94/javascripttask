@@ -1,0 +1,579 @@
+// //String in Console Log
+// console.log("Just started learning JS");
+// //We can calculate
+// console.log(45+89+70);
+
+// let js = "Awesome";
+// console.log(js);
+
+// //Values and variables
+
+// // --Value - any parameter you want to save somewhere
+// //Variable - Pointer to that value you saved
+
+// let name = "Arjit Verma"; //String => saved in quotes
+// let currentYear = 2023; //Number => no quotes
+
+// //variable naming
+// let arjit_verma = "AV";
+// let $function = 27;
+
+// let person = "Arjit";
+// let PI = 3.1415;
+
+// //camelcase
+// let myFirstJob = "Frontend Developer";
+// let myCurrentJob = "Trainer";
+
+// let job1 = "programmer";
+// let job2 = "teacher";
+
+// //Date Types
+
+// //String
+// //Number
+// //Boolean
+
+// // let jsIsFun = "Yes!";
+// let jsIsFun = true;
+
+// console.log(typeof jsIsFun);
+// console.log(typeof myFirstJob);
+
+// //Static vs Dynamic
+// let yearOfBirth = 1991;
+// console.log(typeof yearOfBirth)
+
+// let age ;
+
+// console.log(age); //=> output???
+
+// let moneyInMyAccount = null;
+// let moneyInSecondAccount = 0; //Number
+
+// console.log(moneyInMyAccount === moneyInSecondAccount)
+// console.log(typeof age);
+// // Primitive datatypes in JS
+// // string.
+// // number.
+// // bigint.
+// // boolean.
+// // undefined.
+// // symbol.
+// // null.
+
+// var sym = Symbol("Hello");
+// console.log(sym)
+
+///////////////////////////
+//Define variables
+// let const var
+
+// let age = 30;
+
+// let age = 32;
+// age = 31;
+// console.log(age);
+
+// const birthYear = 1991;
+// // birthYear = 1992;
+
+// var time = "10AM";
+// var time = "1PM"
+// // time = "12AM"
+// console.log(time)
+
+///////////////////////////////
+//Basic Operators
+//Math
+
+// const now = 2023;
+// const myAge = now - 1991;
+// const yourAge = now - 2006;
+
+// console.log(myAge,yourAge)
+
+// console.log(myAge * 2)
+// console.log(myAge / 10);
+// console.log(2 ** 3);
+
+// const firstName = "Arjit";
+// const lastName = "Verma";
+// console.log(firstName + " " + lastName)
+
+// //Assigment Operators
+
+// let x = 10+5; //15
+// x += 10 ; // x = x +10 //25
+// x *= 4; //   x = x*4 //100;
+// x++;
+// x--;
+// console.log(x);
+
+// //Comparison Operators
+//  console.log(myAge > yourAge); // >, < , >= , <= , !=
+//  console.log(yourAge >=18);
+
+//  const isAllowedToDrive = yourAge >= 18;
+//  console.log(isAllowedToDrive)
+
+// Strings and template literals
+
+// const firstName = "Arjit";
+// const job = "Trainer";
+// const birthYear = 1991;
+// const year = 2023;
+
+// let myProfile = "I'm " + firstName + ' a ' + (year - birthYear) + ' year old ' + job + '!';
+
+// console.log(myProfile)
+
+// //template literal
+// let newProfile = `I'm ${firstName} a ${year - birthYear} year old ${job} !`;
+// console.log(newProfile)
+
+////////////////////////////////////
+// Coding Challenge #1
+
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs using the formula (you can even implement both versions)
+3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+GOOD LUCK 😀
+*/
+
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const BMIMark = massMark / heightMark  ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+// const markHigherBMI = BMIMark > BMIJohn;
+
+// console.log(BMIMark,BMIJohn,markHigherBMI);
+
+// /// Decision Making : if/else statements
+
+// const age = 15;
+
+// if(age > 18){
+//     console.log("You are allowed to drive")
+// }else{
+//     console.log("You are NOT allowed to drive");
+// }
+
+// const birthYear = 2001;
+
+// if(birthYear < 2000){
+//     console.log('You are from 20th century')
+// }else{
+//     console.log("You are from 21st century");
+// }
+
+// //
+////////////////////////////////////
+// Coding Challenge #2
+
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+HINT: Use an if/else statement 😉
+GOOD LUCK 😀
+*/
+// const massMark = 78;
+// const heightMark = 1.69;
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const BMIMark = massMark / heightMark ** 2;
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// console.log(BMIMark, BMIJohn);
+
+// if(BMIMark > BMIJohn){
+//     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`)
+// }else{
+//     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})`)
+// }
+
+// // Type conversion
+
+// //Type conversion
+// const inputYear = '1991';
+
+// console.log(inputYear + 10);
+// console.log(Number(inputYear) + 10);
+
+// const name = "Arjit";
+// console.log(Number(name));
+
+// console.log(name + 10);
+
+// //type coercion
+
+// console.log('23' - 3 + "Hello");
+
+// //Equality Operator  == vs ===
+
+// let num1 = "23";
+// let num2 = 23;
+
+// console.log(num1 == num2);// just match the values => TRUE (loose match)
+// console.log(num1 === num2); // match the values and also the datatype => FALSE (strict match)
+
+// const age = '18';
+
+// if(age == 18)console.log("You just became and Adult :D ");
+
+// if(age === 18)console.log("You just became and Adult :D ");
+
+// //Logical Opertors
+// const hasDriverLicence = true;
+// const hadGoodVision = false;
+
+// console.log(hasDriverLicence && hadGoodVision); // Both have to be TRUE
+// console.log(hasDriverLicence || hadGoodVision); // Anyone can be true
+// console.log(!hasDriverLicence)
+
+////////////////////////////////////
+// Coding Challenge #3
+
+/*
+There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins the a trophy!
+1. Calculate the average score for each team, using the test data below
+2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
+TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+GOOD LUCK 😀
+*/
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+// if (scoreDolphins > scoreKoalas) {
+//   console.log('Dolphins win the trophy 🏆');
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log('Koalas win the trophy 🏆');
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log('Both win the trophy!' );
+// }
+
+// let scores = [90,23,24];
+
+//Switch case
+
+// const day = "saturday";
+
+// switch(day){
+//     case 'monday': //day === 'monday'
+//      console.log("Today is monday");
+//      break;
+//     case 'tuesday': //day === 'monday'
+//      console.log("Today is Tuesday");
+//      break;
+//     case 'wednesday': //day === 'monday'
+//      console.log("Today is wednesday");
+//      break;
+//     default:
+//      console.log("Day not found")
+// }
+
+//Functions
+// console.log("program is starting");
+
+// function logger() {
+//   console.log("My name is Arjit");
+// }
+
+// console.log("Program is ending");
+
+// //calling / running  / invoking a function
+// logger(); // ()=> invoke the function - running the function
+
+// function fruitProcessor(apples, oranges) {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges `;
+//   return juice;
+// }
+
+// const myJuice = fruitProcessor(5, 2);
+// console.log(myJuice);
+
+// function userInfo(name, age, email) {
+//   const user = `My name is ${name} and I am ${age} years old . You can contact me at ${email}`;
+// }
+
+// let myUser = userInfo("Ankit Singh", 25, "ankit123@gmail.com");
+// console.log(myUser);
+
+// // Function Declarations vs. Expressions
+
+// //Function declarations
+
+// function calAge(birthYear) {
+//   return 2023 - birthYear;
+// }
+
+// let age1 = calAge(1991);
+// console.log(age1);
+
+// //
+
+// // Function Expression
+
+// const calAge2 = function (birthYear) {
+//   return 2023 - birthYear;
+// };
+
+// const age2 = calAge2(1991);
+// console.log(age2);
+
+
+/////////////////////
+//arrow functions
+
+const calAge = (birthYear)=>{
+    return 2023 - birthYear
+}
+
+const betterCalAge = birthYear => 2023 - birthYear;
+
+
+
+///////////////////////////////////////
+// Coding Challenge #1
+
+/*
+Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
+Each team competes 3 times, and then the average of the 3 scores is calculated (so one average score per team).
+A team ONLY wins if it has at least DOUBLE the average score of the other team. Otherwise, no team wins!
+1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+2. Use the function to calculate the average for both teams
+3. Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)".
+4. Use the 'checkWinner' function to determine the winner for both DATA 1 and DATA 2.
+5. Ignore draws this time.
+TEST DATA 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+TEST DATA 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+HINT: To calculate average of 3 values, add them all together and divide by 3
+HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores 😉
+GOOD LUCK 😀
+*/
+
+
+// const calcAverage = (a,b,c) => (a+b+c)/3;
+// // console.log(calcAverage(3,4,5))
+
+// let scoreDolphins = calcAverage(44,23,71);
+// let scoreKoalas = calcAverage(10,4,2);
+// console.log(scoreDolphins,scoreKoalas)
+
+// const checkWinner = function(avgDolhins,avgKoalas){
+//     if(avgDolhins > 2* avgKoalas){
+//         console.log(`Dolphins win 🏆`)
+//     }else if(avgKoalas > 2* avgDolhins){
+//         console.log(`Koalas win 🏆`)
+//     }else{
+//         console.log('No team wins!!!')
+//     }
+// }
+// checkWinner(scoreDolphins,scoreKoalas);
+
+/// Ternary Operator  ?
+
+// let age = 23;
+// let hadLicense = false;
+
+// // if(age > 18){
+// //     console.log("You are allowed to drive 🚗")
+// // }else{
+// //     console.log("You cannot drive a car . Ride a bike 🚴‍♀️")
+// // }
+
+// age > 18  ? 
+// console.log("You are allowed to drive 🚗") :  console.log("You cannot drive a car . Ride a bike 🚴‍♀️");
+
+
+// // statement ? "What happnes when true" : "What happens when false";
+
+// // Array -
+
+// const student1 = "Deepak";
+// const student2 = "Snehita";
+// const student3 = "Anji";
+
+// //Creating an Array
+
+// const students = ["Deepak","Snehita","Anji","Payal","Pinal"];
+// console.log(students)
+
+// //Access values in array
+// console.log(students[0]);
+// console.log(students[1]);
+// console.log(students[4]);
+
+
+// //Another way of creating an array - using Array constructor
+
+// const years = new Array(1991,1995,1999,2003,2007);
+// console.log(years)
+
+// years[2] = 2023;
+// console.log(years)
+
+//Basic Operations on array
+// const friends = ["Michael","Steven","Peter"];
+
+// //Add Elements
+// const newLength = friends.push("Jay");
+// console.log(friends)
+// console.log(newLength)
+
+// console.log(friends.length)
+// //Unshift
+// friends.unshift("Arjit")
+
+// console.log(friends)
+
+// //Remove Elements
+// // friends.pop(); // remove the last element
+// const popped = friends.pop()
+// console.log(popped)
+// console.log(friends)
+
+// friends.shift() // remove the first element of the array
+// console.log(friends)
+
+// console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Peter"));
+// console.log(friends.indexOf("Aman"));
+
+
+
+// console.log(friends.includes("Steven"));
+// console.log(friends.includes("Bob"));
+
+// // if(friends.includes("Steven")){
+// //     console.log("You have a friend called Steven 😅")
+// // }else{
+// //     console.log("You dont have any friend called Steven 🙃")
+
+// // }
+
+// friends.includes("Steven") ? console.log("You have a friend called Steven 😅") :console.log("You dont have any friend called Steven 🙃")
+
+
+
+/*
+Steven is  building his tip calculator, using these rules:
+Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above  Use the function type you like the most. Test the function using a bill value of 100.
+2. And now let's use arrays! So create an array 'bills' containing the test data below.
+3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before.
+4. BONUS: Create an array 'total' containing the total values, so the bill + tip.
+TEST DATA: 125, 555 and 44
+HINT: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new array) 😉
+GOOD LUCK 😀
+*/
+
+// const calcTip = function(bill){
+//     return bill>=50 && bill<=300 ? bill * 0.15 : bill * 0.2
+// }
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+
+// const bills = [125,555,44];
+// const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])];
+// const totals = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]]
+
+// console.log(bills,tips,totals)
+
+
+//Object
+// key:value
+
+
+// const user = {
+//     firstName : "Arjit",
+//     lastName : "Verma",
+//     age : 2023 - 1991,
+//     job :"Trainer",
+//     friends:["Aman","Gaurav","Ankit"],
+//     availableForWork : false
+// }
+
+// console.log(user)
+// //DOT Notation
+// console.log(user.firstName)
+// console.log(user.age)
+// console.log(user.job)
+
+// //Bracket Notation
+
+// console.log(user['availableForWork']);
+// console.log(user['lastName']);
+
+// const nameKey = "Name";
+// console.log(user['first'+nameKey]) // OUTPUT ????
+// // me[firstName]
+// console.log(user['last'+nameKey]);
+
+// user.location = "Lucknow";
+// user['instagram'] = "arjitv"
+// user.job = "Corporate Trainer"
+// console.log(user)
+
+//Object Methods => Objects can have function attached to them 
+
+const user = {
+    firstName : "Arjit",
+    lastName : "Verma",
+    birthYear: 1991,
+    job :"Trainer",
+    friends:["Aman","Gaurav","Ankit"],
+    availableForWork : false,
+    calcAge : function(){
+        return 2023 - this.birthYear
+    },
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}.`
+    }
+}
+
+const admin = {
+    name : "rahul",
+    birthYear: 1995
+}
+
+
+console.log(user.calcAge())
+console.log(user.getSummary());
+
+
+// Iterations : Loops
+//For
+
+for(let rep =1 ; rep<=30;rep++ ){
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+
+
+const friends = ["Michael","Steven","Peter"];
+
+for(let i=0;i<friends.length;i++){
+    console.log(friends[i],typeof(friends[i]))
+}
+
+//Using FOR Loop create an array with all the years from 2000 - 2023
+// [2000,2001,2002....2023]
+//HINT : Use array.push and FOR loop
+
+const years = [];
+
+for(let i = 2000; i <= 2023;i++){
+    years.push(i)
+}
+
+console.log(years)

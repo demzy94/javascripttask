@@ -1,0 +1,40 @@
+<script>
+
+//  Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter).
+
+// 1. Store Mark's and John's mass and height in variables
+// 2. Calculate both their BMIs using the formula (you can even implement both versions)
+// 3. Create a boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+
+// TEST DATA 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+// TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
+
+
+var massMark = parseFloat(prompt("Enter Mark's Mass"));
+var heightMark = parseFloat(prompt("Enter Mark's Height"));
+var massJohn = parseFloat(prompt("Enter John's Mass"));
+var heightJohn = parseFloat(prompt("Enter John's Height"));
+// var massMark = 78;
+// var heightMark = 1.69;
+// var massJohn = 92;
+// var heightJohn = 1.95;
+
+var markBMI = massMark / (heightMark ** 2);
+var johnBMI = massJohn / (heightJohn * heightJohn);
+console.log("Mark's weight is " + markBMI);
+console.log("John's weight is " + johnBMI);
+
+const markHigherBMI = Boolean(markBMI > johnBMI) ;
+console.log(markHigherBMI);
+    // alert(markHigherBMI);
+
+if(markHigherBMI){
+  console.log('Mark\'s BMI is bigger than John\'s');
+//   alert('Mark\'s BMI is bigger than John\'s');
+}
+else {
+  console.log('John\'s BMI is bigger than Mark\'s');
+//   alert('John\'s BMI is bigger than Mark\'s');
+}
+
+</script>
