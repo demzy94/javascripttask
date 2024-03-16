@@ -2,22 +2,47 @@
     //  write a program to accept the name and age of 6 people, print the name , age and elegibilty status 
 
 
-var name = "";
-var age = "";
+// let name = "";
+// let age = "";
+const noOfStu = parseInt(prompt("For how many student?"));
+// let noOfStu = 6;
 var i = 1;
-while (i <= 6) {
-  name = prompt("Enter " + i + " name")
-  age = parseInt(prompt("Enter "+ i + " age"))
+while (i <= noOfStu) {
+  name = prompt("Enter " + i +"th" + " name")
+  age = parseInt(prompt("How old are you?"))
   i++;
 
   if (age >= 18){
     // alert(name + " " + age + " years old" + " you're eligible")
-    console.log(name + " " + age + " years old" + " you're eligible")
+    console.log(name + " - " + age + " years old" + " you're eligible")
     }else{
     // alert(name + " " + age + " years old" + " you're not eligible")
-    console.log(name + " " + age + " years old" + " you're not eligible")
+    console.log(name + " - " + age + " years old" + " you're not eligible")
     }
 }
+
+
+// let name = "";
+// let age = "";
+// let noOfStu = parseInt(prompt("For how many student?"));
+// // let noOfStu = 6;
+// var i = 1;
+// while (i <= noOfStu) {
+//   name = prompt("Enter " + i +"th" + " name")
+//   age = parseInt(prompt("How old are you?"))
+//   i++;
+
+//  var y = 1;
+//  while(y <= noOfStu){
+//   let elegibiltyStatus;
+//   if(age >= 18){
+//     elegibiltyStatus = "Eligible";
+//   }else{
+//     elegibiltyStatus = "Not Eligible";
+//   }
+//   y++
+//   console.log(name + " - " + age + " - " + elegibiltyStatus);
+//  }
 
 
 </script>
