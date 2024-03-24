@@ -1,0 +1,25 @@
+<script>
+    // 2. *Temperature Classifier:*
+//    Classify temperatures into different categories based on the value provided:
+//    - If the temperature is below 0, print "Freezing."
+//    - If the temperature is between 0 and 15, print "Cold."
+//    - If the temperature is between 16 and 25, print "Mild."
+//    - If the temperature is above 25, print "Hot."
+
+let temp = prompt("Enter a Temparature")
+if (temp < 0){
+    alert("The temparature is "+temp+"degree Celcius and it is Freezing")
+}else if(temp >=0 && temp <=15){
+    alert("The temparature is "+temp+"degree Celcius and it is Cold")
+}else if(temp >=16 && temp <=25){
+    alert("The temparature is "+temp+"degree Celcius and it is Mild")
+}else if(temp > 25){
+    alert("The temparature is "+temp+"degree Celcius and it is Hot")
+}
+else{
+    alert("That's a wrong input, Enter a Number")
+}
+
+
+
+</script>

@@ -1,0 +1,19 @@
+<script>
+    // 5. *Time of Day Greeting:*
+//    Create a JavaScript program that takes the current hour as input and print a greeting message based on the time of day:
+//    - Before 12 PM: Good morning
+//    - Between 12 PM and 5 PM: Good afternoon
+//    - After 5 PM: Good evening 
+
+// let time = new Date().getHours(prompt("Enter time"));
+let time = parseInt(prompt("Enter time"))
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+alert(greeting) ;
+</script>

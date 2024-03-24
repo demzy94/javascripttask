@@ -1,0 +1,44 @@
+<script>
+    // 2. *Student Grades Analyzer:*
+    // Write a JavaScript program that analyzes an array of student objects. Each student object should have properties for name and grades (an array of numbers). Calculate and print the average grade for each student using a loop and an if-else statement to handle cases where a student has no grades.
+
+let students=[
+  {
+    name: "Udeme",
+    grade:[50, 60, 70, 70,70,90]
+  },
+  {
+    name: "Emma",
+    grade:[70, 60, 50, 50, 60, 40]
+  },
+  {
+    name: "Val",
+    grade:[60, 50, 40, 60, 60,40]
+  },
+  {
+    name: "Austine",
+    grade:[50, 60, 40, 30, 50, 30]
+  }
+];
+      students.forEach(function(student){
+      let noOfgrades;
+      let no_courses = student.grade.length;
+      let sum =0;
+      let average =0;
+      if (no_courses > 0) {
+        for(let i =0; i < no_courses; i++){
+          sum += student.grade[i];
+        }
+          average = sum/no_courses
+        // alert(student.name + " your total Score is " + sum + " and your average Score is " +average)
+        console.log(student.name + " your total Score is "  + sum + "\nand your average Score is " +average)
+        // if(average > 50){
+        //   console.log("Pass");
+        // }else{
+        //   console.log("Fail");
+        // }
+      } else {
+        noOfgrades = "No Item";
+      }
+})
+</script>

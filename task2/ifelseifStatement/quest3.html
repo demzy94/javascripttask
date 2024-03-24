@@ -1,0 +1,56 @@
+<script>
+    //  3. *Day of the Week Checker:*
+//    Check and print a message indicating whether a given day is a weekday or a weekend day:
+//    - If the day is Monday to Friday, print "Weekday."
+//    - If the day is Saturday or Sunday, print "Weekend."
+//      let weekday =[monday, Tuesday, wednesday,thursday,friday]
+//      let weekend =[saturday, sunday]
+
+// using switch statement
+// let dayOftheWeek =prompt("Enter day of the weekend")
+// switch (dayOftheWeek.toLocaleLowerCase()) {
+//     case "monday":
+//             alert("Weekday")
+//         break;
+//     case "tuesday":
+//             alert("Weekday")
+//         break;
+//     case "wednesday":
+//             alert("Weekday")
+//         break;
+//     case "thursday":
+//             alert("Weekday")
+//         break;
+//     case "friday":
+//             alert("Weekday")
+//         break;
+//     case "saturday":
+//             alert("Weekend")
+//         break;
+//     case "sunday":
+//             alert("Weekend")
+//         break;
+//     default:
+//         alert("invalid input")
+//         break;
+// }
+
+// using loop
+let dayOftheWeek =prompt("Enter day of the week")
+let weekday =["monday", "tuesday", "wednesday","thursday","friday"]
+let weekend =["saturday", "sunday"]
+
+    for(let i = 0; i < weekday.length; i++) {
+   if(dayOftheWeek.toLocaleLowerCase() == weekday[i]){
+    console.log("WeekDay")
+   }else {
+   for(let x =0; x < weekend.length; x++){
+    if(dayOftheWeek.toLocaleLowerCase() == weekend[x]){
+        console.log("WeekEnd")
+    }
+   }
+   }
+  
+}
+
+</script>

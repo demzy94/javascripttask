@@ -1,0 +1,35 @@
+<script>
+    // 1. *Shopping List Total Calculator:*
+//    Create a JavaScript program that calculates the total cost of items in a shopping list. The program should iterate through an array of objects, where each object represents an item with properties for name and price. Use an if-else if statement to determine if an item has a discount based on its price. Finally, compute the total cost and print it.
+
+let cart = [
+  { name: "phone", price: 1500},
+  { name: "watch", price: 1000},
+  { name: "laptop", price: 3500},
+];
+let totalCost=0;
+let total = 0;
+for(let item of cart) {
+  total += item.price ;
+}
+if(total >=5000){
+ totalCost = total-(total * 0.05) 
+}
+console.log("Total Cart Price:", totalCost); 
+
+
+// alert("Total Cost Price: " + totalCost);   
+// var cart = [
+//     { item: "bag", price: 10 },
+//     { item: "glass", price: 25 },
+//     { item: "box", price: 15 }
+// ];
+
+// var totalPrice = cart.reduce(function(accumulator, currentPurchase) {
+//     return accumulator + currentPurchase.price;
+// }, 0);
+
+// alert("Total Price:" + totalPrice);
+
+
+</script>
