@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: teal;
+        }
+        .box{
+            position: relative;
+            width: 450px;
+            height: 550px;
+            border-radius: 30px;
+            background: teal;
+        }
+        h2{
+            width: 100%;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            font-size: 1.75em;
+        }
+        #inputBx{
+            position: relative;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 15px 20px;
+            /* border-radius: 30px; */
+            font-size: 1em;
+        }
+        .box li{
+            position: relative;
+            display: flex;
+            align-items: center;
+            /* text-decoration: none; */
+            background: teal;
+            margin: 15px 0;
+            /* padding: 10px; */
+            color: white;
+        }
+        /* #btnEnter{
+            position: absolute;
+            padding: 15px 20px;
+            background-color: blue;
+            border-radius: 0;
+            color: white;
+            font-weight: bold;
+        }
+        #btnReset{
+            position: relative;
+            padding: 15px 20px;
+            background-color: red;
+            border-radius: 0;
+            color: white;
+            font-weight: bold;
+        } */
+        .buttons {
+            padding-left: 100px;
+            position: relative;
+            padding-top: 20px ;
+            width: 960px;
+            margin: 0 auto;
+            /* display: flex ; */
+            /* justify-content: start; */
+        }
+
+       #btnEnter{
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            background: blue;
+        }
+        #btnReset{
+            width: 100px;
+            height: 50px;
+            margin: 0 auto;
+            background: tomato;
+        }
+            
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="box">
+          
+            <input type="text" placeholder="Write Here" id="inputBx" required>
+            <div class="buttons">
+                <button id="btnEnter">Enter </button> <button id="btnReset">Reset </button>
+            </div>
+            <ul id="list"></ul>
+        </form>
+    </div>
+    <script>
+        let btnEnter = document.querySelector('#btnEnter');
+        let inputBx = document.querySelector('#inputBx');
+        let list = document.querySelector('#list');
+        let btnReset = document.querySelector('#btnReset');
+
+        btnEnter.addEventListener("click", function(){
+            if(inputBx !== ""){
+                list.innerText += inputBx.value + '\n';
+                inputBx.value ="";
+            }
+
+        btnReset.addEventListener("click", function(){
+            list.innerText="";
+            inputBx.value="";
+        })
+
+        // inputBx.addEventListener('keyup', (event_info) => {
+        //     if(event_info.keyCode == 13){
+        //         let city = event_info.target.value;
+        //         checkCity(city)
+        //     }
+        // });
+                    //  addItem(this.value)
+            //     this.value =""
+            // alert("hello ")
+        // })
+
+        // inputBx.addEventListener("keyup", function(event) {
+        //     if(event.key == "Enter"){
+        //         addItem(this.value)
+        //         this.value =""
+        //     }
+        // })
+        // let addItem = (inputBx)=>{
+        //     let listItem = document.createElement("li");
+        //     listItem.innerHTML = `${inputBx}<i><i>`;
+
+              
+        //         list.appendChild(listItem);
+        // }
+        })
+//         saveBtn.addEventListener('click', function(){
+//     itemList.innerText += textbox.value + '\n';
+
+//     // Reset the value ot the textbox
+//     textbox.value = '';
+// })
+
+// // Reset Button and its event
+// document.getElementById('btnReset').addEventListener('click', function(){
+//     textbox.value = '';
+//     itemList.innerText = '';
+// })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Coverter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="row">
+            <div class="col">
+                <h3>From</h3>
+                <select id="from" class="currency">
+                    <option value="">Select</option>
+                    <option value="USD">USD</option>
+                    <option value="Naira">Naira</option>
+                </select>
+                <input type="text" id="input_currency" name="" required>
+            </div>
+            <div class="col">
+                <h3>To</h3>
+                <select name="" id="to" class="currency">
+                    <option value="">Select</option>
+                    <option value="Naira">Naira</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input type="text" id="output_currency" disabled name="">
+            </div>
+        </div>
+        <div class="btns">
+            <button id="submitBtn">Convert</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

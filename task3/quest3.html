@@ -1,0 +1,29 @@
+<script>
+// 3. CLEANEST CITY DETECTOR
+// In your program, you have a record of the cleanest cities. Write a program that takes input from the user for their city and determines if it is included in the record.
+
+// let city = prompt("Enter your city")
+// let cleanCity = ["portharcourt", "abuja", "calabar", "uyo", "ibandan"]
+
+//    let isDirty = true
+// for (let i =0; i < cleanCity.length; i++) 
+//     if (city.toLocaleLowerCase() === cleancity[i]) 
+//         alert(city+ ' is among the recorded clean cities');
+//     else{
+//         alert(city+ ' is not recorded as a clean city')
+// }
+
+      let enterCity =prompt("Enter a city")
+      let cleanCity =["uyo","calabar","abuja","ibandan","abakaliki"]
+      let isClean = false;
+      cleanCity.forEach(city => {
+        if (enterCity.toLocaleLowerCase() == city) {
+           isClean = true;
+        } 
+      });
+      
+      alert(isClean ? "Clean City" : "Dirty City");
+
+
+      
+</script>
