@@ -112,14 +112,28 @@ form.addEventListener("submit", function(ev){
                         <div>Address: ${customer.Address} </div>
                     </div>
                     <div class="icons">
-                        <div>
-                            <span>
-                                <i id="deleteIcon" class="fa-regular fa-trash-can" style="cursor: pointer;"></i>
-                            </span>
-                        </div>
+                        <span>
+                            <i id="deleteIcon" class="fa-regular fa-trash-can" style="cursor: pointer;"></i>
+                        </span>
                     </div>
                 </div>`
-
+//    <div class="items-item" >
+//                     <div class="details">
+//                         <div><img src="${customer.image}" class ="cus_Image"/></div>
+//                         <div>Name: ${customer.name} </div>
+//                         <div>Phone: ${customer.Phone} </div>
+//                         <div>Email: ${customer.Email} </div>
+//                         <div>Gender: ${customer.Gender} </div>
+//                         <div>Address: ${customer.Address} </div>
+//                     </div>
+//                     <div class="icons">
+//                         <div>
+//                             <span>
+//                                 <i id="deleteIcon" class="fa-regular fa-trash-can" style="cursor: pointer;"></i>
+//                             </span>
+//                         </div>
+//                     </div>
+//                 </div>
     details.insertAdjacentHTML('afterbegin', grids)
     console.log(customers);
 // details.innerHTML+= grids;
@@ -155,8 +169,28 @@ details.addEventListener('click', function(event){
     if(response){        
         const targetId = event.target.getAttribute('id');
         if(targetId == 'deleteIcon'){
-            const childElement = event.target.parentNode.parentNode.parentNode.parentNode;
+            const childElement = event.target.parentNode.parentNode.parentNode;
             details.removeChild(childElement);
         }  
     }
 })
+
+
+// var a = 0;
+
+// function fun(a) {
+//     console.log(a);
+//     var a = 5;
+// }
+// fun(10)
+
+// i =100
+// while (i <=20) {
+//     console.log(i);
+    
+// }i+=20
+
+// for (let i = 100; i <=200; i+=20) {
+//     console.log(i);
+    
+// }

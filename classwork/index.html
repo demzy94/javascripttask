@@ -33,6 +33,7 @@
             /* background: #565656; */
             padding: 5px;
             gap: 10px;
+
             /* margin: 10px; */
         }
         .cust-details .items-item{
@@ -42,8 +43,11 @@
             font-size: 17px;
             text-align:left;
             border-radius: 30px;
-            width:80%;
+            width:160px;
+            /* height: 100px; */
+            /* min-width: 10%; */
             box-shadow: 20px;
+            position: relative;
         }
         /* .cust-details .items-item :hover{
             background-color: pink;
@@ -101,6 +105,8 @@
         }
         .items-item{
             display: flex;
+            /* background: red; */
+            /* border-radius: 10px; */
             
         }
         .details{
@@ -124,7 +130,20 @@
         }
     }
     .cus_Image{
-        width: 50%;
+        /* width: 50%; */
+        height: 150px;
+            border-radius: 500px 0 500px 0;
+
+    }
+    .icons{
+        display: none;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+    .items-item:hover .icons{
+        display: block;
+        color: red;
     }
     </style>
 </head>
@@ -152,28 +171,7 @@
         <div class="container">
             <h1 style="font-size: 1.3em; font-family:  Arial, sans-serif; padding: 20px;">Customers Details</h1>
             <div class="cust-details" id="customer_details">
-                <!-- <div class="items-item" >
-                    <div>
-                        
-                    </div>
-                    <div>
-                        <div class="details">
-                            <div>Name: ${customer.name} </div>
-                            <div>Phone: ${customer.Phone} </div>
-                            
-                            <div>Email: ${customer.Email} </div>
-                            <div>Gender: ${customer.Gender} </div>
-                            <div>Address: ${customer.Address} </div>
-                        </div>
-                        <div class="icons">
-                            <div>
-                                <span>
-                                    <i id="deleteIcon" class="fa-regular fa-trash-can" style="cursor: pointer;"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                
             </div>
         </div>
     </div>

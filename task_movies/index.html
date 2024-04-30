@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/task_movies/css/styles.css">
+</head>
+<body class="bg-[#16151c] h-screen text-white">
+    <header class="bg-[#060a17] ">
+        <nav class="flex items-center justify-between px-12 h-16 lg:gap-12">
+            <img src="/task_movies/img/logo11.png" alt="" class="w-16 cursor-pointer">
+            <!-- <a href="#" class="text-cyan-50">MOVIES</a> -->
+            <div class="dropdown-Menu absolute -top-full left-0 max-lg:bg-[#060a17] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex-row lg:justify-between ">
+                <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-12 flex-1">
+                    <li class="hover:text-[#20bed3] cursor-pointer">Main</li>
+                    <li class="hover:text-[#20bed3] cursor-pointer">Shop</li>
+                    <li class="hover:text-[#20bed3] cursor-pointer">Purchase</li>
+                    <li class="hover:text-[#20bed3] cursor-pointer">Favourite</li>
+                </ul>
+                <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-12">
+                    <button ><i class="fa-solid fa-magnifying-glass fa-sm hover:text-[#20bed3]"></i></button>
+                    <button class="rounded-ful p-4 lg:p-2"><img class="w-6 rounded-full" src="/movie/img/1.jpg" alt=""></button>  
+                    <!-- <i class="fa-regular fa-user fa-sm hover:text-[#20bed3]"></i> -->
+                </div>
+            </div>
+            <div class="toggleBtn">
+                <i class="fa-solid fa-bars fa-lg lg:hidden cursor-pointer"></i>
+            </div>
+        </nav>
+       <div class="flex gap-6 items-center justify-between ">
+            <div class="w-1/2 lg:px-12 flex-initial">
+                <div class="text-center text-4xl font-black px-14 lg:px-0 lg:text-5xl lg:text-start">
+                    <h1 class="whitespace-nowrap lg:px-12 lg:pt-20">The Little <p class="hidden lg:inline-block">Mermaid</p> </h1>
+                    <h1 class="lg:hidden">Mermaid</h1>
+                </div>
+                <p class="hidden lg:block lg:px-12 -w-full lg:py-7 tracking-[0.1rem] lg:pt-5">Mermaids are fascinating mythical creatures often depicted as having the upper body of a human and the lower body of a fish.</p>
+                <div class="flex items-center text-center gap-4 lg:px-12">
+                    <button class="lg:relative lg:m-0 m-24 lg:mx-0 mx-32 absolute p-2 rounded-2xl shadow-2xl whitespace-nowrap lg:tracking-[0.1rem]  bg-[#00a5bc]"> <i class="fa-solid fa-play"></i> Watch the Movie</button>
+                    <button class="hidden lg:block p-2 rounded-2xl shadow-2xl whitespace-nowrap bg-[#2b2e3a] tracking-[0.1rem] shadow-slate-950 hover:bg-[#00a5bc]">Trailer</button>
+                    <button class="hidden lg:block bg-[#2b2e3a] tracking-[0.1rem] shadow-slate-950  py-2 px-6 rounded-2xl shadow-2xl hover:bg-[#00a5bc]"><i class="fa-solid fa-bookmark"></i></button>
+                </div>
+                <p class="lg:inline-block px-12 pt-36 hidden tracking-[0.1rem] text-sm">2024 <span>Adventure </span>Family <span>Fantasy </span>Musical <span> 2hrs 15 Mins</span></p>
+            </div>
+            <div class="flex-initial">
+                <img src="/task_movies/img/img.png" alt="" class="h-auto">
+            </div>
+       </div>
+    </header>
+    <section>
+        <div class="px-12 py-5">
+            <h1 class="font-bold text-xl">Movies....</h1>
+        </div>
+        <div id="movie" class="grid px-20 grid-cols-3 text-center gap-2 lg:grid lg:items-center lg:text-center lg:grid-cols-6 lg:gap-2 lg:px-12 h-full ">
+            <!-- <div class="bg-red-600">
+                <img src="/task_movies/img/1.jpg" alt="" class="w-64 rounded-xl">
+                <div>
+                    <h1 class="font-bold text-xs">Title</h1>
+                    <h2>Release date</h2>
+                    <p><i class="fa-solid fa-circle-info"></i></p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+   
+    <!-- <script>
+       
+
+    </script> -->
+    <script src="/task_movies/js/loadMoviesExample.js"></script>
+</body>
+</html>
